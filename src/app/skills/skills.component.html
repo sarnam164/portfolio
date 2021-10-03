@@ -1,0 +1,171 @@
+<section class="skills section">
+  <h2 class="section_title">Skills</h2>
+  <span class="section_subtitle">My Technical Level</span>
+
+  <div class="skills_container container grid">
+    <div>
+
+      <div class="skills_content" (click)="togglesection1()">
+        <div class="skills_header">
+          <i class="uil uil-brackets-curly skills_icon"></i>
+
+          <div>
+            <h1 class="skills_title">Frontend Development</h1>
+            <span class="skills_subtitle"></span>
+          </div>
+
+          <i *ngIf="section1" class="uil uil-angle-down skills_arrow"></i>
+          <i *ngIf="!section1" class="uil uil-angle-up skills_arrow"></i>
+        </div>
+
+        <div class="skills_list grid" [ngClass]="{'skills_close' : section1}">
+
+          <div class="skills_data">
+            <div class="skills_titles">
+              <h3 class="skills_name">HTML / JSP</h3>
+              <span class="skills_number">90%</span>
+            </div>
+            <mat-progress-bar mode="determinate" value="90"></mat-progress-bar>
+          </div>
+
+          <div class="skills_data">
+            <div class="skills_titles">
+              <h3 class="skills_name">CSS / Bootsrap</h3>
+              <span class="skills_number">80%</span>
+            </div>
+            <mat-progress-bar mode="determinate" value="80"></mat-progress-bar>
+          </div>
+
+          <div class="skills_data">
+            <div class="skills_titles">
+              <h3 class="skills_name">Javascript / jQuery</h3>
+              <span class="skills_number">80%</span>
+            </div>
+            <mat-progress-bar mode="determinate" value="80"></mat-progress-bar>
+          </div>
+
+          <div class="skills_data">
+            <div class="skills_titles">
+              <h3 class="skills_name">Angular</h3>
+              <span class="skills_number">70%</span>
+            </div>
+            <mat-progress-bar mode="determinate" value="70"></mat-progress-bar>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="skills_content" (click)="togglesection2()">
+        <div class="skills_header">
+          <i class="uil uil-server-network skills_icon"></i>
+
+          <div>
+            <h1 class="skills_title">Backend Development</h1>
+            <span class="skills_subtitle"></span>
+          </div>
+
+          <i *ngIf="section2" class="uil uil-angle-down skills_arrow"></i>
+          <i *ngIf="!section2" class="uil uil-angle-up skills_arrow"></i>
+        </div>
+
+        <div class="skills_list grid" [ngClass]="{'skills_close' : section2}">
+
+          <div class="skills_data">
+            <div class="skills_titles">
+              <h3 class="skills_name">Core Java / J2EE</h3>
+              <span class="skills_number">90%</span>
+            </div>
+            <mat-progress-bar mode="determinate" value="90"></mat-progress-bar>
+          </div>
+
+          <div class="skills_data">
+            <div class="skills_titles">
+              <h3 class="skills_name">Spring Boot</h3>
+              <span class="skills_number">80%</span>
+            </div>
+            <mat-progress-bar mode="determinate" value="80"></mat-progress-bar>
+          </div>
+
+          <div class="skills_data">
+            <div class="skills_titles">
+              <h3 class="skills_name">Oracle SQL</h3>
+              <span class="skills_number">80%</span>
+            </div>
+            <mat-progress-bar mode="determinate" value="80"></mat-progress-bar>
+          </div>
+
+          <div class="skills_data">
+            <div class="skills_titles">
+              <h3 class="skills_name">PostgreSQL</h3>
+              <span class="skills_number">70%</span>
+            </div>
+            <mat-progress-bar mode="determinate" value="70"></mat-progress-bar>
+          </div>
+
+          <div class="skills_data">
+            <div class="skills_titles">
+              <h3 class="skills_name">MySQL</h3>
+              <span class="skills_number">70%</span>
+            </div>
+            <mat-progress-bar mode="determinate" value="70"></mat-progress-bar>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="skills_content" (click)="togglesection3()">
+        <div class="skills_header">
+          <i class="uil uil-cog skills_icon"></i>
+
+          <div>
+            <h1 class="skills_title">Tools</h1>
+            <span class="skills_subtitle"></span>
+          </div>
+
+          <i *ngIf="section3" class="uil uil-angle-down skills_arrow"></i>
+          <i *ngIf="!section3" class="uil uil-angle-up skills_arrow"></i>
+        </div>
+
+        <div class="skills_list grid" [ngClass]="{'skills_close' : section3}">
+
+          <div class="skills_data">
+            <div class="skills_titles">
+              <h3 class="skills_name">Maven</h3>
+              <span class="skills_number">80%</span>
+            </div>
+            <mat-progress-bar mode="determinate" value="80"></mat-progress-bar>
+          </div>
+
+          <div class="skills_data">
+            <div class="skills_titles">
+              <h3 class="skills_name">Hibernate</h3>
+              <span class="skills_number">80%</span>
+            </div>
+            <mat-progress-bar mode="determinate" value="80"></mat-progress-bar>
+          </div>
+
+          <div class="skills_data">
+            <div class="skills_titles">
+              <h3 class="skills_name">Apache Tomcat</h3>
+              <span class="skills_number">80%</span>
+            </div>
+            <mat-progress-bar mode="determinate" value="80"></mat-progress-bar>
+          </div>
+
+          <div class="skills_data">
+            <div class="skills_titles">
+              <h3 class="skills_name">Git</h3>
+              <span class="skills_number">80%</span>
+            </div>
+            <mat-progress-bar mode="determinate" value="80"></mat-progress-bar>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
