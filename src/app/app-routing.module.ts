@@ -16,7 +16,8 @@ const routes: Routes = [
   {path:"qualification", component:QualificationComponent, pathMatch:"full"},
   {path:"portfolio", component:PortfolioComponent, pathMatch:"full"},
   {path:"contact", component:ContactComponent, pathMatch:"full"},
-  {path:"**", component:ErrorComponent}
+  {path:"error", component:ErrorComponent, pathMatch:"full"},
+  {path:"**", redirectTo:"/error"}
 ];
 
 @NgModule({
